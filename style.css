@@ -1,0 +1,152 @@
+body {
+    background: linear-gradient(90deg, rgba(254,253,243,1) 0%, rgba(251,245,210,1) 35%, rgba(255,234,170,1) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#header {
+    max-width: 500px;
+} 
+h1 {
+    text-align: center;
+    color: #5E565A;
+    text-shadow: 3px 3px 3px #A9CBB7;
+    font-family: 'Karla', sans-serif;
+    font-size: 35px;
+    letter-spacing: 1px;
+}
+h3 {
+    text-align: center;
+    color: #5E565A;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+}
+#eggcontainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 800px;
+}
+#eggs {
+    width: 120px;
+    margin: 20px;
+    text-align: center;
+    border-radius: 30px;
+}
+h5 {
+    margin: 5px;
+    font-size: 20px;
+    color: #5E565A;
+    text-shadow: 3px 3px 3px #A9CBB7;
+    font-family: 'Karla', sans-serif;
+}
+.cookingTime {
+    border-radius: 30px;
+    border: 2px solid #FF934F;
+    background-color: rgb(246, 205, 109, 0.2);
+    width: 50px;
+    margin-top: -18px;
+    font-family: 'Karla', sans-serif;
+}
+.decription {
+    margin-top: 0;
+    color: rgb(69, 69, 69);
+    font-family: 'Oswald', sans-serif;
+}
+input {
+    accent-color: #5E565A;
+    cursor: pointer;
+    height: 1.2rem;
+    width: 1.2rem;
+    margin-right: 10px;
+    vertical-align: middle;
+    outline: none;
+}
+#timerBtns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#container-btns {
+    display: flex;
+    margin: 20px;
+}
+#btnStart, #btnReset {
+    background: rgba(169, 203, 183, 0.61);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.2px);
+    -webkit-backdrop-filter: blur(6.2px);
+    border: 1px solid rgba(169, 203, 183, 0.24);
+    color: #5E565A;
+    padding: 20px;
+    border-radius: 30px;
+    border: none;
+    font-size: 20px;
+    font-weight: bolder;
+    margin: 15px;
+    cursor: pointer;
+}
+#btnStart:hover, #btnReset:hover {
+    background-image: linear-gradient(to right bottom, #efecca, #f3efb7, #f5f3a3, #f6f68f, #f7fa79, #f9f36a, #fceb5a, #ffe34a, #ffce45, #ffba46, #ffa64a, #ff934f);
+}
+.eggsAreReady {
+    font-size: 40px;
+    text-align: center;
+    display: none;
+    font-family: 'Karla', sans-serif;
+    color: #FF934F; 
+    text-shadow: 3px 3px 3px #5E565A;
+}
+.coldHotPot {
+    margin-left: 70px;
+    margin-bottom: 30px;
+}
+#container-countdown {
+    margin-bottom: 30px;
+}
+#countdown {
+    text-align: center;
+    margin: 0px;
+    height: 50px;
+    width: 150px;
+    display: inline-block;
+    box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
+    font-size: 40px;
+    color: #5E565A;
+    font-weight: bolder;
+    padding: 5px;
+    margin-top: 10px;
+    font-family: 'Karla', sans-serif;
+}
+#btnStart:disabled {
+    cursor: default;
+    opacity: 0.7;
+    background: rgba(169, 203, 183, 0.61);;
+}
+
+@media all and  (max-width: 540px) {
+    #btnStart, #btnReset {
+        padding: 15px;
+    }
+    .decription {
+        display: none;
+    }
+    #eggcontainer {
+        flex-wrap: nowrap;
+    }
+    #eggs {
+        margin: 0px;
+        width: 70px;
+    }
+    .eggpic {
+        width: 60px;
+    }
+    h5 {
+        font-size: 16px;
+    }
+}
+@media all and  (max-width: 280px) {
+    #eggcontainer {
+        flex-wrap: wrap;
+    }
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Egg Boil Timer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="eggIcon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@500&family=Oswald&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="header">
+        <h1>Egg Boil TIMER</h1>
+    </div>
+    <div id="header">
+        <h3>1. Select how you want your eggs cooked</h3>
+    </div>
+        <div id="eggcontainer">
+            <div id="eggs" class="one">
+                <div>
+                    <img class="eggpic" src="6min.png" alt="six minute egg">
+                    <p class="cookingTime">6 min</p>
+                    <input type="radio" name="pickTheEgg" class="radio" id="sixMinEgg">
+                </div>
+                <div>
+                    <h5>Runny yolk</h5>
+                    <p class="decription">(quite soft with a liquidy yolk, the white fairly cooked)</p>
+                </div>
+            </div>
+            <div id="eggs">
+                <div>
+                    <img class="eggpic" src="8min.png" alt="eight minute egg">
+                    <p class="cookingTime">8 min</p>
+                    <input type="radio" name="pickTheEgg" class="radio" id="eightMinEgg">
+                </div>
+                <div>
+                    <h5>Soft</h5>
+                    <p class="decription">(the yolk is soft, but it's not liquid, slightly jammy)</p>
+                </div>
+            </div>
+            <div id="eggs">
+                <div>
+                    <img class="eggpic" src="10min.png" alt="ten minute egg">
+                    <p class="cookingTime">10 min</p>
+                    <input type="radio" name="pickTheEgg" class="radio" id="tenMinEgg" checked>
+                </div>
+                <div>
+                    <h5>Medium</h5>
+                    <p class="decription">(there's just a smidge of softness left in the yolk)</p>
+                </div>
+            </div>
+            <div id="eggs">
+                <div>
+                    <img class="eggpic" src="12min.png" alt="twelve minute egg">
+                    <p class="cookingTime">12 min</p>
+                    <input type="radio" name="pickTheEgg" class="radio" id="twelveMinEgg">
+                </div>
+                <div>
+                    <h5>Semi-hard</h5>
+                    <p class="decription">(egg is a bit firmer, with a lighter yolk)</p>
+                </div>
+            </div>
+            <div id="eggs">
+                <div>
+                    <img class="eggpic" src="14min.png" alt="fourteen minute egg">
+                    <p p class="cookingTime">14 min</p>
+                    <input type="radio" name="pickTheEgg" class="radio" id="fourteenMinEgg">
+                </div>
+                <div>
+                    <h5>Hard</h5>
+                    <p class="decription">(egg with the lightest yolk and a firm white)</p>
+                </div>
+            </div>
+        </div>
+
+    <div id="header">
+        <h3>2. Bring a pot of water to a boil with enough water to cover the eggs. 
+            Once boiling, reduce the heat to low, place eggs in the water. 
+            Then, immediately turn the heat back up to a boil. </h3>
+    </div>
+    <div id="waterPic">
+        <img src="hotpot1.png" class="coldHotPot" alt="boiling water" width="200px">
+    </div>
+
+    <div id="header">
+        <h3>3. Start the timer by clicking on "Start timer" <br>
+        When the timer is done, it will ring</h3>
+    </div>
+    <div id="timerBtns">
+        <div id="container-btns">
+            <button id="btnStart">Start TIMER</button>
+            <button id="btnReset">RESET</button>
+        </div>
+        <div id="container-countdown">
+            <p id="countdown">00 : 00</p>
+        </div>
+    </div>
+    <div id="header">
+        <p class="eggsAreReady">Your perfect EGGS are READY</p>
+    </div>
+
+    <div id="header">
+        <h3>4. Take the eggs out of the boiling water and put them in cold water to cool down <br>
+        ENJOY</h3>
+    </div>
+
+    <div id="header">
+        <img src="eggsRowcut.png" alt="Eggs" width="200px">
+    </div>
+
+    <audio id="readySound">
+        <source src="Alarm Clock.mp3" type="audio/mp3">
+    </audio>
+
+
+<script src="index.js"></script>
+    
+</body>
+</html>
